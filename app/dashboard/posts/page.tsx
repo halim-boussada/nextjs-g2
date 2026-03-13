@@ -19,7 +19,7 @@ export default async function Posts() {
           <div key={post.id}>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
-            <Link href={"/posts/" + post.id}>Check details</Link>
+            <Link href={"/dashboard/posts/" + post.id}>Check details</Link>
           </div>
         );
       })}

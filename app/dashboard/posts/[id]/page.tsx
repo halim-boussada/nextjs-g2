@@ -33,7 +33,7 @@ export default async function PostDetails({ params }: Props) {
     <div>
       <h1>{post.title}</h1>
       <h3>{post.body}</h3>
-      <Link href={"/posts"}>Back to all posts</Link>
+      <Link href={"/dashboard/posts"}>Back to all posts</Link>
     </div>
   );
 }

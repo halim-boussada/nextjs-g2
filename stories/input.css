@@ -1,0 +1,17 @@
+.custom-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+.custom-input {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.custom-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

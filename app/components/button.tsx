@@ -1,16 +1,13 @@
 "use client";
 import { useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { Flex, Text, Button, Box, HoverCard, Avatar, Heading } from "@radix-ui/themes";
+import Link from "next/link";
 
-export default  function Login() {
-  const searchParams = useSearchParams();
-
-
+export default function Login() {
   const router = useRouter();
   const [username, setUsername] = useState("");
   const [password, setpassword] = useState("");
-
-  
 
  async function login() {
     console.log({ username, password });
@@ -30,7 +27,6 @@ export default  function Login() {
   }
   return (
     <div style={{ width : "400px" , margin : "0 auto" , marginTop : "200px" , padding : "20px"}}>
-        
       <input
         type="text"
         value={username}
